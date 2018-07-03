@@ -21,14 +21,14 @@ class Stack {
 	private int index = 0;
 	
 	boolean isEmpty(){
-	    if(index - 1 <=0){
+	    if(index - 1 == -1){
 		return true;
 	    }
           return false;
 	}
 	
 	boolean isFull(){
-	    if(index + 1 > arr.length){
+	    if(index + 1 == arr.length+1){
 	  	return true;
 	    }
 	  return false;
