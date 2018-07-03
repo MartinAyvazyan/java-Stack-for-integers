@@ -20,14 +20,14 @@ class Stack {
 	private int[] arr = new int[28];
 	private int index = 0;
 	
-	boolean isEmpty(int index){
+	boolean isEmpty(){
 	    if(index - 1 <=0){
 		return true;
 	    }
           return false;
 	}
 	
-	boolean isFull(int index){
+	boolean isFull(){
 	    if(index + 1 > arr.length){
 	  	return true;
 	    }
@@ -35,7 +35,7 @@ class Stack {
 	}
 
         void push(int newItem){
-	    if(isFull(index)){
+	    if(isFull()){
 		 return;
  	    }
 	  arr[index] = newItem;	
@@ -43,7 +43,7 @@ class Stack {
 	}
 
 	int pop(){
-	    if(isEmpty(index)){
+	    if(isEmpty()){
 	       return 0;
 	    }
 	  int deletedItem = arr[index-1];
@@ -52,7 +52,7 @@ class Stack {
 	}
 
 	int peek(){
-	    if(isEmpty(index)){
+	    if(isEmpty()){
 		return 0;
 	    }
 	    return arr[index-1];
