@@ -10,7 +10,7 @@ class Main {
 //		stack.push(3);
 		stack.pop();
 		stack.push(4);
-		System.out.println("Poped" + stack.pop());
+//		System.out.println("Poped" + stack.pop());
 		System.out.println("Array" + stack.toString());
 	}
 
@@ -28,7 +28,7 @@ class Stack {
 	}
 	
 	boolean isFull(int index){
-	    if(index + 1 > 27){
+	    if(index + 1 > arr.length){
 	  	return true;
 	    }
 	  return false;
